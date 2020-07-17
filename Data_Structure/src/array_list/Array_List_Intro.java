@@ -3,9 +3,11 @@ import java.util.*;
 public class Array_List_Intro {
 	public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-		List<Integer> list=new ArrayList<Integer>();
-		while(sc.hasNextInt()){
-            list.add(sc.nextInt());
+        String s;
+		List<String> list=new ArrayList<String>();
+		for(int i=0;i<5;i++){
+            s=sc.next();
+            list.add(s);
         }
 		System.out.println(list);	
 	}
