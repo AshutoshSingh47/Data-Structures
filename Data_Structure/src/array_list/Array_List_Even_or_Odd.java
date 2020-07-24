@@ -16,6 +16,15 @@ public class Array_List_Even_or_Odd {
 			   list.add(j);
 		   }
 		   System.out.println(list);
+		  //Code inside the multi-line comment can also be used. 
+		 /*  for(i=0;i<list.size();i++)
+		   {
+			   j=list.get(i);
+			        if(j%2==0)
+				   list.remove(i);
+		   }
+		   System.out.println(list);*/
+		  
 		   Iterator itr=list.iterator();
 		   while(itr.hasNext())
 		   {i=(Integer)itr.next();
