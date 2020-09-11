@@ -21,7 +21,7 @@ public class Stack_Functions {
 //		popped=stack.pop();
 //		popped=stack.pop();
 //		System.out.println(popped);
-		int find=stack.search(3);
+		int find=stack.search(4);
 		System.out.println(find);
 		for(j=1;j<=size;j++)
 		{popped=stack.pop();
