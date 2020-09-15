@@ -14,15 +14,14 @@ public class Stack_Intro {
 			pushed=sc.nextInt();
 			stack.push(pushed);
 		}
+		popped=stack.peek();
+		System.out.println(popped);
 		System.out.println(stack);
-		for(j=0;j<size-1;j++)
+		for(j=1;j<=size;j++)
 		{
 			popped=stack.pop();
 			System.out.print(popped+" ");
 		}
-		System.out.println();
-		popped=stack.peek();
-		System.out.println(popped);
 //		stack.push(1);
 //		stack.push(2);
 //		stack.push(3);
