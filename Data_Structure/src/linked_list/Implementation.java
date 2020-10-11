@@ -19,6 +19,52 @@ public void insert(int data){
 		n.next=node;
 	}
 	}
+public int get_element() {
+	Node temp=head;
+	Node to_remove;
+	if(temp==null)
+	{
+		
+	}
+	if(temp.next==null)
+	{
+		to_remove=head;
+		head=null;
+		return to_remove.data;
+	}
+	else
+	{
+		while(temp.next.next!=null)
+		{
+			temp=temp.next;
+		}
+		to_remove=temp.next;
+		temp.next=null;
+		return to_remove.data;
+	}
+		
+}
+public boolean isEmpty(){
+	return head==null;
+}
+public int get_last(){
+	Node temp=head;
+	if(temp.next==null)
+	{
+		temp=head;
+		return temp.data;
+	}
+	else
+	{
+		while(temp.next!=null)
+		{
+			temp=temp.next;
+		}
+		return temp.data;
+	}
+		
+		
+}
 public void show(){
 	Node node=head;
 	while(node.next!=null){
