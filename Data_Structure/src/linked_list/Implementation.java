@@ -24,7 +24,7 @@ public int get_element() {
 	Node to_remove;
 	if(temp==null)
 	{
-		
+		System.out.println("List is Empty");
 	}
 	if(temp.next==null)
 	{
