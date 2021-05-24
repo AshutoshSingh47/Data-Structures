@@ -65,13 +65,44 @@ public E get_last(){
 		
 		
 }
+public void rotate(int k)
+{
+	Node<E>temp=head;
+    Node<E>itr=null;
+    if(k==0)
+    {
+        System.out.println("Invalid Input");
+    }
+    else{
+   for(int i=0;i<k;i++)
+    {
+       itr=temp;
+       temp=temp.next;
+       
+    }
+    itr.next=null;
+    itr=temp;
+    while(temp.next!=null)
+    {
+        temp=temp.next;
+    }
+    temp.next=head;
+    head=itr;
+        
+    }
+}
+    
 public void show(){
 	Node<E> node=head;
-	while(node.next!=null){
+	while(node!=null){
 		System.out.print(node.data+" ");
 		node=node.next;
 	}
-		System.out.println(node.data);
+		System.out.println();
 }
+
+    
+ 
 }
+
 

@@ -19,6 +19,10 @@ public class Main {
 			implied.insert(j);
 		}
 		implied.show();
+		System.out.println("Enter the value from where you want to rotate");
+		int k=sc.nextInt();
+		implied.rotate(k);
+		implied.show();
 	}
 
 }
