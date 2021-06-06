@@ -23,6 +23,11 @@ public class Main {
 		int k=sc.nextInt();
 		implied.rotate(k);
 		implied.show();
+		System.out.println(implied.get_element());
+		System.out.println(implied.get_element());
+		System.out.println(implied.get_element());
+		implied.show();
+		
 	}
 
 }
