@@ -7,6 +7,7 @@ public class Main {
 		implied.insert(1);
 		implied.insert(2);
 		implied.insert(3);
+		implied.display();
 	}
 
 }
