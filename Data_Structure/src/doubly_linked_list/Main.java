@@ -14,6 +14,11 @@ public class Main {
 		implied.reverse();
 		System.out.println();
 		implied.display();
+		System.out.println();
+		implied.reverse_display();
+		implied.rotate(3);
+		System.out.println();
+		implied.display();
 
 	}
 

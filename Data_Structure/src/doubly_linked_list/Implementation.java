@@ -83,4 +83,30 @@ public class Implementation<E> {
 			}
 		}
 	}
+	public void rotate(int n)
+	{
+		int i=0;Node<E>temp,current=head;
+		if(head==null)
+		{
+			System.out.println("List is Empty");
+		}
+		else {
+		while(i!=n)
+		{
+			current=current.next;
+			i++;
+		}
+		temp=current.prev;
+		temp.next=null;
+		current.prev=null;
+		temp=current;
+		while(current.next!=null)
+		{
+			current=current.next;
+		}
+		current.next=head;
+		head.prev=current;
+		head=temp;}
+		
+	}
 }
